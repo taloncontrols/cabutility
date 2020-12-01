@@ -1,0 +1,12 @@
+@import '../../commonStyles/colors.scss';
+
+.scrollableGridContainer {
+  overflow-y: hidden;
+  height: 100%;
+
+  .scrollableGrid {
+    overflow-y: auto;
+    height: auto;
+    max-height: calc(100% - 51px);
+  }
+}

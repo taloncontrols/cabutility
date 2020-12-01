@@ -1,0 +1,58 @@
+@import '../../commonStyles/colors';
+
+.accountSection {
+  position: absolute;
+  bottom: 16px;
+  height: 40px;
+  display: flex;
+
+  .avatar {
+    background-color: $lightBlue;
+    color: $white;
+    border-radius: 24px;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    margin: 0 10px 0 16px;
+    flex: none;
+    width: 40px;
+    height: 40px;
+  }
+
+  .name {
+    flex: 1;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: $loginCredColor;
+  }
+
+  .logout {
+    flex: none;
+    width: 24px;
+    content: url('../../static/images/icons/logout.svg');
+    margin-right: 25px;
+    cursor: pointer;
+  }
+
+  &.collapsed {
+    flex-direction: column;
+    height: 80px;
+
+    .name {
+      display: none;
+    }
+
+    .logout {
+      transform: rotate(90deg);
+      margin-left: 26px;
+      margin-top: 20px;
+    }
+  }
+}
+
+

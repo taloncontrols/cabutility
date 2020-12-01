@@ -1,0 +1,42 @@
+@import '../../commonStyles/colors';
+
+$width: 260px;
+$collapsedWidth: 72px;
+
+.leftMenu {
+  flex: none;
+  background: $darkBlue;
+  width: $width;
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+
+  &.collapsed {
+    width: $collapsedWidth;
+    .logo {
+      display: none;
+    }
+  }
+
+  .logo {
+    max-width: 128px;
+    margin-top: 12px;
+    margin-left: 24px;
+    float: left;
+  }
+
+  .collapseIcon {
+    float: right;
+    margin-top: 27px;
+    margin-right: 24px;
+    cursor: pointer;
+  }
+
+  ul.leftMenuContainer {
+    position: absolute;
+    top: 104px;
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+}

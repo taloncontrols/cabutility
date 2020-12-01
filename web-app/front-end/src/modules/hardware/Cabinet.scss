@@ -1,0 +1,52 @@
+
+@import "../../App.scss";
+
+.cabinet{
+    padding: 5px;
+  }
+  
+  .iotext{
+    margin-left:0px;
+    width:60px;
+    height: 20px;
+  }
+  
+  .table th, .table td{
+    padding:1px !important;
+  }
+  
+.tln-cabinet {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+//    margin: 12px;
+    padding: 15px;
+//    border: 1px solid $tln-base;
+//    border-radius: $tln-keypad-border-radius-md;
+ //   background: $tln-base-darker;
+ //   background-image: url(../../assets/illustration.svg);
+//    background-size: contain;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.tln-bin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+//    opacity: 60%;
+
+    background-color: beige;
+    color: $tln-base;
+//    color: $tln-base-neutral;
+    font-size: 200%;
+    border-radius: $tln-keypad-button-radius;
+    margin: 3px;
+    flex-grow: 1;
+
+    .tln-keypad-btn-text {
+        font-size: 100%;
+        padding: 8px;
+    }
+}

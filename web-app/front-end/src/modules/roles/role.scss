@@ -1,0 +1,60 @@
+@import '../../commonStyles/colors';
+
+.role {
+  .roleInfo {
+    padding: 0px 24px 0px;
+  }
+
+  .infoRow {
+    height: 38px;
+    line-height: 40px;
+    margin-bottom: 16px;
+
+    .title {
+      font-weight: 500;
+    }
+  }
+
+  label {
+    font-weight: 500;
+  }
+
+.permission-grid {
+    .odd-row {
+      background-color: $lightGray;
+    }
+
+    .column-checkbox {
+        width: 15%;
+    }
+
+    .column-collapse {
+        width: 15%;
+    }
+
+    .column-name {
+        width: 70%;
+    }
+
+    .permission {
+        font-weight: 400;  
+    }
+
+    border: 2px solid $lightGray;
+  }
+
+.nav-tabs {
+  .nav-link.active {
+      font-weight: 600;
+      color: $lightBlue;
+  }
+
+  padding: 16px 16px 0px 16px;
+  border-top: 1px solid #dee2e6;
+}
+
+.permissionsSection {
+    border-top: solid 1px $borderColor;
+    padding: 16px 24px 16px 24px;
+}
+}

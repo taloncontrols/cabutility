@@ -1,0 +1,47 @@
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-family: $tln-font-family;
+
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+tln-code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  }
+
+#root {
+    height: 100%;
+}
+
+button {
+    padding: $tln-button-padding;
+    border-radius: $tln-button-border-radius;
+}
+.tln-btn-primary {
+    @extend button;
+    background-color: $tln-primary-button-color;
+    color: $tln-primary-button-font-color;
+}
+.tln-btn-secondary {
+    @extend button;
+    background-color: $tln-secondary-button-color;
+    color: $tln-secondary-button-font-color;
+}
+
+.tln-button-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 20px;
+}
+
+.tln-logo {
+    width: 250px;
+    margin: 5px 20px;
+}

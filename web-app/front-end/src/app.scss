@@ -1,0 +1,53 @@
+@import 'commonStyles/inter-font';
+@import 'commonStyles/custom';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+
+
+//
+// Base Colors
+
+@import "./tln-styles/base-colors.scss";
+
+    // -> Application adjustments to base colors - can completely replace basic colors
+    $tln-base: #001C71;
+    $tln-base-neutral: white;
+    $tln-accent1: white;
+    $tln-accent2: #0069D9;
+    $tln-accent3: red;
+
+    $tln-base-darker: #00134B;
+    
+//
+// Theme Colors
+
+@import "./tln-styles/theme.scss";
+
+  	// -> Application adjustments to role styles and colors
+    $tln-keypad-button-radius: 40px;
+
+//
+// Role Colors and Styles
+
+@import "./tln-styles/role-styles.scss";
+
+    // -> Application adjustments to role styles and colors
+    $tln-button-border-radius: $tln-border-radius-md;
+
+//
+// Common styles - !!these assume the acp styling framework
+
+@import "./tln-styles/common-styles.scss";
+
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+}

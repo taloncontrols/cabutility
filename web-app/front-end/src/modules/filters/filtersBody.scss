@@ -1,0 +1,29 @@
+@import '../../commonStyles/colors';
+
+.filtersBody {
+  background-color: $filtersBackground;
+  color: $white;
+  display: flex;
+  padding: 13px 16px;
+  height: 60px;
+  margin-bottom: 14px;
+  line-height: 34px;
+
+  .label {
+    font-weight: 600;
+    font-size: 15px;
+    margin-right: 16px;
+    flex: none;
+    width: 63px;
+  }
+
+  input, select {
+    margin-right: 16px;
+    margin-top: auto;
+    flex: 1;
+  }
+
+  .placeholderLabel {
+    display: none;
+  }
+}

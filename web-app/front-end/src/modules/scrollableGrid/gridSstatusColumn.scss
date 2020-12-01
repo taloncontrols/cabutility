@@ -1,0 +1,25 @@
+@import '../../commonStyles/colors';
+
+.active, .inactive {
+  text-align: center;
+
+  &:before {
+    content: '\2022';
+    margin-right: 10px;
+    font-size: 16px;
+  }
+}
+
+.active {
+  &:before {
+    margin-left: -5px;
+    color: $lightBlue;
+  }
+}
+
+.inactive {
+  &:before {
+    color: $red;
+    margin-left: -13px;
+  }
+}

@@ -1,0 +1,12 @@
+@import '../../commonStyles/colors';
+
+.topBar {
+  background: $lightGray;
+  height: 63px;
+  border-bottom: 1px solid $borderColor;
+  padding: 20px 24px;
+
+  img {
+    cursor: pointer;
+  }
+}

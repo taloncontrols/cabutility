@@ -1,0 +1,52 @@
+@import '../../commonStyles/colors';
+
+.loginContainer {
+  background-size: cover;
+  background: $darkBlue;
+  width: 100%;
+  display: flex;
+}
+
+.overlay {
+  background-image: url('../../static/images/illustration.svg');
+  flex: 1;
+}
+
+.sidebar {
+  background: $white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  flex: none;
+  width: 640px;
+
+  .logoContainer {
+    flex: 1;
+    display: flex;
+    img {
+      margin-top: 40%;
+    }
+    .empty {
+      flex: 1;
+    }
+  }
+
+  .formContainer {
+    flex: 1;
+    font-weight: 500;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .bottom-credentials {
+    color: $loginCredColor;
+  }
+}
+
+.logo {
+  margin-top: auto;
+  margin-bottom: 30px;
+}

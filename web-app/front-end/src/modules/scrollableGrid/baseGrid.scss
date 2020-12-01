@@ -1,0 +1,47 @@
+@import '../../commonStyles/colors.scss';
+
+.gridContainer {
+  table.headerTable {
+    margin-bottom: 0;
+  }
+
+  table {
+    thead {
+      tr {
+        span {
+          &.sortable {
+            &:after {
+              content: url('../../static/images/icons/icon_sort.svg');
+              margin-left: 8px;
+              line-height: 21px;
+              vertical-align: middle;
+              cursor: pointer;
+            }
+
+            &.asc {
+              &:after {
+                content: url('../../static/images/icons/icon_sort_asc.svg');
+              }
+            }
+
+            &.desc {
+              &:after {
+                content: url('../../static/images/icons/icon_sort_desc.svg');
+              }
+            }
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        &:hover {
+          background-color: $selectedRow;
+          box-shadow: 0 4px 8px $shadow;
+        }
+      }
+    }
+  }
+}
+

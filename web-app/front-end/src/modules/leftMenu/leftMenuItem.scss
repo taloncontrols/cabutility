@@ -1,0 +1,101 @@
+@import '../../commonStyles/colors';
+@import './leftMenu.scss';
+
+.leftMenuItem {
+  height: 48px;
+  line-height: 48px;
+  padding-left: 26px;
+  vertical-align: middle;
+  cursor: pointer;
+
+  width: $width;
+  &.collapsed {
+    width: $collapsedWidth;
+
+    &.collapsedOpened {
+      width: $width;
+      background-color: $blue;
+
+      .hided {
+        display: inline;
+        margin-left: 30px;
+      }
+    }
+
+    .hided {
+      display: none;
+    }
+  }
+
+  &:hover {
+    background: $blue;
+  }
+
+  &.selected {
+    background: $blue;
+  }
+
+  &.opened, &.closed {
+    &:after {
+      margin-right: 24px;
+      float: right;
+      margin-top: 8px;
+    }
+  }
+
+  &.opened {
+    &:after {
+      content: url('../../static/images/icons/icon_close.svg');
+    }
+  }
+
+  &.closed {
+    &:after {
+      content: url('../../static/images/icons/icon_open.svg');
+    }
+  }
+
+  img {
+    margin-top: -4px;
+    margin-right: 18px;
+  }
+}
+
+.subItemsContainer {
+  ul.subItems {
+    list-style-type: none;
+    padding-inline-start: 0;
+    margin-top: 0;
+
+    li {
+      &:before {
+        content: '\2022';
+        color: $lightBlue;
+        margin-right: 16px;
+        margin-left: 16px;
+      }
+    }
+  }
+
+  &.collapsed {
+    width: calc(#{$width} - #{$collapsedWidth}) !important;
+    position: absolute;
+    left: $collapsedWidth;
+    background-color: $white;
+
+    ul.subItems {
+      li {
+        color: $grayText;
+
+        &:before {
+          content: none;
+        }
+
+        &:hover, &.selected {
+          color: $credColor;
+          background-color: $lightGray;
+        }
+      }
+    }
+  }
+}

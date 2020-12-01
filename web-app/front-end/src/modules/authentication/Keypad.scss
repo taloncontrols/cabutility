@@ -1,0 +1,78 @@
+
+@import "../../App.scss";
+.tln-page {
+    height: 100%;
+
+    background-color: $tln-workspace-background-color;
+    color: $tln-workspace-font-color;
+
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.tln-sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.tln-keypad {
+    flex-grow: 1.5;
+}
+
+.tln-cabinet {
+    flex-grow: 1.5;
+}
+.tln-logo {
+    flex-grow: 0;
+    align-self: center;
+}
+
+.tln-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding: 5px 20px;
+    font-size: 150%;
+}
+
+.tln-lock-status {
+    display: flex;
+    flex-grow: 0;
+    padding: 5px 20px;
+}
+
+.tln-keypad {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+    background: $tln-base-darker;
+    background-image: url(../../assets/illustration.svg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.tln-keypad-row {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    opacity: 70%;
+    button {
+        background-color: $tln-base;
+        color: $tln-base-neutral;
+        font-size: 200%;
+        border-radius: $tln-keypad-button-radius;
+        margin: 3px;
+        flex-grow: 1;
+    }
+    .tln-keypad-btn-text {
+        font-size: 100%;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,20 @@
+@import '../../commonStyles/colors';
+
+.users {
+  .usersContainer {
+    height: calc(100% - 68px);
+    overflow-y: hidden;
+    padding: 16px 24px 38px;
+
+    .tableContainer {
+      height: 100%;
+      &.withFilters {
+        height: calc(100% - 74px);
+      }
+
+      table.table {
+        border: solid 1px $borderColor;
+      }
+    }
+  }
+}

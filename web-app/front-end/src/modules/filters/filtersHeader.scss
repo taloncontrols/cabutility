@@ -1,0 +1,22 @@
+@import '../../commonStyles/colors';
+
+.filtersHeader {
+  form {
+    &.form-inline {
+      height: 61px;
+      margin-left: 20px;
+
+      .search {
+        margin-top: auto;
+        width: 340px;
+      }
+    }
+  }
+
+  .action{
+    height: 61px;
+    margin-left: 20px;
+    color: $lightBlue;
+    cursor: pointer;
+  }
+}
