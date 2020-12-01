@@ -28,11 +28,11 @@ interface IFiltersHeaderProps<ItemType> {
 
 @observer
 export class FiltersHeader<ItemType> extends React.Component<IFiltersHeaderProps<ItemType>> {
-    private readonly ref: React.RefObject<Input<unknown>>
+    private readonly ref: React.RefObject<Input>
 
     public constructor(props: Readonly<IFiltersHeaderProps<ItemType>>) {
         super(props);
-        this.ref = React.createRef<Input<unknown>>();
+        this.ref = React.createRef<Input>();
     }
 
     public render(): React.ReactElement {
